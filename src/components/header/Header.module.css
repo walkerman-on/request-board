@@ -1,0 +1,61 @@
+.nav {
+	padding: 13px 7px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navBurger {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.menuTitleText {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.menuLk {
+	display: flex;
+	align-items: center;
+}
+
+.imgCont {
+	height: 40px;
+	width: 40px;
+	margin-right: 12px;
+}
+
+.lkImg {
+	height: 100%;
+	width: auto;
+	overflow: hidden;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.userInfo {
+	margin-right: 12px;
+}
+
+.userName {
+	display: block;
+	font-size: 16px;
+	line-height: 16px;
+	margin-bottom: 4px;
+}
+
+.userNameLink {
+	cursor: pointer;
+}
+
+.userName:hover {
+	opacity: 0.7;
+}
+
+.userStaff {
+	display: block;
+	font-size: 12px;
+	color: var(--color-black-alfa60);
+}

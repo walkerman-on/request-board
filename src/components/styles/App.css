@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+	--color-black: #002033;
+	--color-black-alfa60: rgba(0, 32, 51, 0.6);
+	--color-black-alfa30: rgba(0, 32, 51, 0.3);
+	--color-blue-alfa-20: rgba(0, 65, 102, 0.2);
+	--color-blue-alfa-28: rgba(0, 65, 102, 0.28);
+	--color-blue-alfa-7: rgba(0, 65, 102, 0.07);
+	--color-blue-alfa80: rgba(0, 57, 92, 0.8);
+	--color-red: #ff4443;
+	--color-white: white;
+	--color-button: #0078d2;
+	--color-orange: #f38b01;
+	--color-violet: #89258b;
+	--color-turquoise: #44ccdb;
+	--bg-light-gray: #dee4e8;
+	--bg-light-gray-alfa50: rgba(236, 241, 244, 0.5);
+	--bg-dark-gray: #00426912;
+}
+
+* {
+	all: unset;
+	display: revert;
+	list-style: none;
+}
+
+#root {
+	border-bottom: 1px solid var(--color-blue-alfa-20);
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--color-black);
+}
+
+.App {
+	padding: 0 24px;
+}
