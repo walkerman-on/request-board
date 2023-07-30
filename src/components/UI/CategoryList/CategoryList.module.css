@@ -1,12 +1,3 @@
-.main__applications-columns {
-	flex: 1;
-}
-.applications-columns__list {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	gap: 16px;
-}
-
 .container {
 	background-color: var(--bg-light-gray-alfa50);
 	border-radius: 4px;
@@ -17,6 +8,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
+	margin-bottom: 10px;
 }
 .cardsList {
 	display: flex;

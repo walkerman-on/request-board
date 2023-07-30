@@ -7,7 +7,12 @@ const RequestMenu = ({ category }) => {
 		<div className={cl.columns}>
 			<ul className={cl.columnsList}>
 				{category.map((category) => (
-					<CategoryList />
+					<CategoryList
+						name={category.name}
+						workAmount={category.workAmount}
+						totalPrice={category.totalPrice}
+						key={category.id}
+					/>
 				))}
 			</ul>
 		</div>

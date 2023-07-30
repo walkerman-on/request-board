@@ -5,7 +5,7 @@ import DealButton from "../button/DealButton/DealButton"
 const Card = () => {
 	return (
 		<li className={cl.container}>
-			<div className={cl.borderOrange}>
+			<div className={`${cl.cards} ${cl.borderOrange}`}>
 				<div className={cl.firstBlock}>
 					<p className={cl.info}>
 						<span className={cl.primeryText}>efef</span>
