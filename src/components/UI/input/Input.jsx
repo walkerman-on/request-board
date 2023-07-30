@@ -6,7 +6,7 @@ const Input = () => {
 		<input
 			type="text"
 			name="form-search"
-			className={cl.search}
+			className={cl.input}
 			placeholder="Поиск по сделкам"
 		></input>
 	)

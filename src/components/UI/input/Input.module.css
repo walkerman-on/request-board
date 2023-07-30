@@ -1,4 +1,4 @@
-.search {
+.input {
 	border-top: 1px solid var(--color-blue-alfa-28);
 	border-left: 1px solid var(--color-blue-alfa-28);
 	border-bottom: 1px solid var(--color-blue-alfa-28);
@@ -8,6 +8,6 @@
 	min-width: 150px;
 }
 
-.search:focus {
+.input:focus {
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }

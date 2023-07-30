@@ -1,4 +1,4 @@
-.requestBtn {
+.btn {
 	background-color: var(--color-button);
 	border-radius: 4px;
 	height: 40px;
@@ -10,7 +10,7 @@
 	cursor: pointer;
 }
 
-.requestBtn:hover {
+.btn:hover {
 	opacity: 0.8;
 }
 

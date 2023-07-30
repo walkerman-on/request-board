@@ -29,7 +29,7 @@ const Sidebar = () => {
 					</ul>
 					<WGButton>Добавить группу +</WGButton>
 				</div>
-				<div cclassName={cl.settings}>
+				<div className={cl.settings}>
 					{/* <img
 						src="./img/settings-menu.svg"
 						alt="Настройки"

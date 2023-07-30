@@ -1,4 +1,4 @@
-.button {
+.btn {
 	background-color: var(--color-white);
 	border: 1px solid var(--color-button);
 	width: 176px;
@@ -11,11 +11,11 @@
 	cursor: pointer;
 }
 
-.button:hover {
+.btn:hover {
 	opacity: 0.7;
 }
 
-.buttonText {
+.btnText {
 	font-size: 14px;
 	color: var(--color-button);
 }

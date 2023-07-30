@@ -1,0 +1,74 @@
+.main__applications-columns {
+	flex: 1;
+}
+.applications-columns__list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 16px;
+}
+
+.container {
+	background-color: var(--bg-light-gray-alfa50);
+	border-radius: 4px;
+}
+
+.columnCont {
+	padding: 14px 8px 0px 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.cardsList {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	overflow: auto;
+	scroll-snap-type: y mandatory;
+}
+
+.cardsList::-webkit-scrollbar {
+	width: 0;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.infoTitle {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.category {
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: var(--color-black);
+	text-transform: uppercase;
+}
+
+.amountBg {
+	background-color: var(--bg-light-gray);
+	width: 28px;
+	height: 20px;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.amountBg {
+	color: var(--color-black-alfa60);
+	font-size: 10px;
+	font-weight: 600;
+}
+
+.price {
+	font-size: 32px;
+	font-weight: 300;
+	color: var(--color-black-alfa30);
+	text-align: center;
+}

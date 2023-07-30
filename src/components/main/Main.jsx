@@ -5,11 +5,9 @@ import Menu from "../menu/Menu"
 
 const Main = () => {
 	return (
-		<div className={cl.container}>
-			<div className={cl.menu}>
-				<Sidebar />
-				<Menu />
-			</div>
+		<div className={`${cl.menu} ${cl.container}`}>
+			<Sidebar />
+			<Menu />
 		</div>
 	)
 }

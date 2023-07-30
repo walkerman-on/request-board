@@ -1,7 +1,7 @@
 import React from "react"
-import cl from "./WGButton.module.css"
+import cl from "./EditButton.module.css"
 
-const WGButton = ({ children }) => {
+const EditButton = ({ children }) => {
 	return (
 		<button className={cl.btn} type="button">
 			<span className={cl.btnText}>{children}</span>
@@ -9,4 +9,4 @@ const WGButton = ({ children }) => {
 	)
 }
 
-export default WGButton
+export default EditButton

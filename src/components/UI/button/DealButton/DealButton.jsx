@@ -1,7 +1,7 @@
 import React from "react"
-import cl from "./WGButton.module.css"
+import cl from "./DealButton.module.css"
 
-const WGButton = ({ children }) => {
+const DealButton = ({ children }) => {
 	return (
 		<button className={cl.btn} type="button">
 			<span className={cl.btnText}>{children}</span>
@@ -9,4 +9,4 @@ const WGButton = ({ children }) => {
 	)
 }
 
-export default WGButton
+export default DealButton

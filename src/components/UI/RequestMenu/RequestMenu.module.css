@@ -1,0 +1,21 @@
+.columns {
+	flex: 1;
+}
+.columnsList {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 16px;
+}
+
+/* cards list */
+.applications-columns__column-container {
+	background-color: var(--bg-light-gray-alfa50);
+	border-radius: 4px;
+}
+
+.column-container {
+	padding: 14px 8px 0px 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
