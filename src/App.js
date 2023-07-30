@@ -1,11 +1,13 @@
 import React from "react"
 import "./components/styles/App.css"
-import Header from "./components/header/Header"
+import Navigation from "./components/navigation/Navigation.jsx"
+import Main from "./components/main/Main"
 
 function App() {
 	return (
 		<div className="App">
-			<Header />
+			<Navigation />
+			<Main />
 		</div>
 	)
 }

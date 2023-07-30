@@ -1,0 +1,50 @@
+.menuCont {
+	border-right: 1px solid var(--color-blue-alfa-20);
+	display: flex;
+}
+
+.menu {
+	padding: 19px 0 20px 0;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.workGroup {
+	display: flex;
+	flex-direction: column;
+	gap: 31px;
+}
+
+.groupList {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.workGroupLink {
+	color: var(--color-black-alfa60);
+	cursor: pointer;
+}
+
+.workGroupLinkActive {
+	font-weight: 700;
+}
+
+.workGroupLink:hover,
+.settings__link:hover {
+	opacity: 0.7;
+}
+
+.settings {
+	display: flex;
+	align-items: flex-end;
+	gap: 12px;
+	flex-grow: 1;
+}
+
+.settingsLink {
+	font-size: 12px;
+	color: var(--color-black-alfa60);
+	cursor: pointer;
+}
