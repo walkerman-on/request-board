@@ -1,16 +1,20 @@
 import React from "react"
 import cl from "./Cards.module.css"
 import DealButton from "../button/DealButton/DealButton"
+import { formattedDate } from "../../../utils/helper"
+import data from "../../../data.json"
 
-const Card = () => {
+const Card = ({ title, date, dateChange, price, executorId }) => {
+	const executorList = data.executors.find((ex) => ex.id === executorId)
+
 	return (
 		<li className={cl.container}>
-			<div className={`${cl.cards} ${cl.borderOrange}`}>
+			<div className={`${cl.cards} ${cl.borderDefault}`}>
 				<div className={cl.firstBlock}>
 					<p className={cl.info}>
-						<span className={cl.primeryText}>efef</span>
-						<span className={cl.secondaryText}>500 ₽</span>
-						<span className={cl.tertiaryText}>15 августа 2022</span>
+						<span className={cl.primeryText}>{title}</span>
+						<span className={cl.secondaryText}>{price} ₽</span>
+						<span className={cl.tertiaryText}>{formattedDate(date)}</span>
 					</p>
 					<div className={cl.contact}>
 						{/* <img src="./img/phone-icon.svg" alt="Иконка телефона" class="contact-img">
@@ -21,28 +25,34 @@ const Card = () => {
 				<div className={cl.secondBlock}>
 					<p className={cl.dateChange}>
 						<span className={cl.tertiaryText}>Дата изменения</span>
-						<span className={cl.secondaryText}>15 августа 2022</span>
+						<span className={cl.secondaryText}>
+							{formattedDate(dateChange)}
+						</span>
 					</p>
 				</div>
 				<div className={cl.thirdBlock}>
-					<div className={cl.executor}>
+					<div className={cl.executorBlock}>
 						<span className={cl.tertiaryText}>Исполнитель</span>
 						<div className={cl.executor}>
 							<div className={cl.executorCont}>
-								{/* <img class ="executor-img" src="${executorData.photo || defaultCard.executorImg}" alt="Аватар исполнителя"> */}
+								<img
+									className={cl.executorImg}
+									src={require(`../../../img/executor-photo/${executorList.photo}`)}
+									alt="Аватар исполнителя"
+								/>
 							</div>
 							<a href="#" className={`${cl.tertiaryText} ${cl.executorLink}`}>
-								Олег Иванов
+								{executorList.name}
 							</a>
 						</div>
 					</div>
-					<div className={cl.thirdBlock}>
+					<div className={cl.thirdBlockCards}>
 						<div className={cl.work}>
 							<a href="#" className={`${cl.workLink} ${cl.tertiaryText}`}>
 								Дела
 							</a>
 							<div className={cl.workBg}>
-								<span className={cl.amount}>3</span>
+								<span className={cl.amount}>{executorList.workAmount}</span>
 							</div>
 						</div>
 						<DealButton>+ Редактировать</DealButton>

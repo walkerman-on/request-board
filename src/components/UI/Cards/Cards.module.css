@@ -13,23 +13,23 @@
 	border-top: 4px solid var(--color-orange);
 }
 
-.cards-border__violet {
+.borderViolet {
 	border-top: 4px solid var(--color-violet);
 }
 
-.cards-border__turquoise {
+.borderUrquoise {
 	border-top: 4px solid var(--color-turquoise);
 }
 
-.cards-border__red {
+.borderRed {
 	border-top: 4px solid var(--color-red);
 }
 
-.cards-border__blue {
+.borderBlue {
 	border-top: 4px solid var(--color-button);
 }
 
-.cards-border__default {
+.borderDefault {
 	border-top: 4px solid var(--color-blue-alfa-28);
 }
 
@@ -83,9 +83,15 @@
 	gap: 18px;
 }
 
-.executor {
+.executorBlock {
 	display: flex;
 	flex-direction: column;
+	gap: 6px;
+}
+
+.executor {
+	display: flex;
+	align-items: center;
 	gap: 6px;
 }
 
@@ -94,7 +100,7 @@
 	width: 20px;
 }
 
-.executor-img {
+.executorImg {
 	height: 100%;
 	width: auto;
 	overflow: hidden;
@@ -111,7 +117,7 @@
 	opacity: 0.7;
 }
 
-.thirdBlock {
+.thirdBlockCards {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;

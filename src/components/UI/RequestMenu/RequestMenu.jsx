@@ -11,6 +11,7 @@ const RequestMenu = ({ category }) => {
 						name={category.name}
 						workAmount={category.workAmount}
 						totalPrice={category.totalPrice}
+						id={category.id}
 						key={category.id}
 					/>
 				))}

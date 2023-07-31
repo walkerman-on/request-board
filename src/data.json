@@ -95,35 +95,35 @@
         {
             "id": 100,
             "name": "Иван Васильев",
-            "photo": "./img/executor-photo/IvanVasilyev.jpg",
+            "photo": "IvanVasilyev.jpg",
             "workAmount": 2,
-            "color": "cards-border__orange"
+            "color": "borderOrange"
         },
         {
             "id": 101,
             "name": "Ольга Андреева",
-            "photo": "./img/executor-photo/OlgaAndreeva.jpg",
+            "photo": "OlgaAndreeva.jpg",
             "workAmount": 1,
-            "color": "cards-border__violet"
+            "color": "borderViolet"
         },
         {
             "id": 102,
             "name": "Дмитрий Сухоруков",
-            "photo": "./img/executor-photo/DmitriySuhorukov.jpg",
+            "photo": "DmitriySuhorukov.jpg",
             "workAmount": 1,
-            "color": "cards-border__turquoise"
+            "colorId": "borderUrquoise"
         },
         {
             "id": 103,
             "name": "Джон Траволта",
-            "photo": "./img/executor-photo/JohnTravolta.jpg",
+            "photo": "JohnTravolta.jpg",
             "workAmount": 2,
-            "color": "cards-border__red"
+            "color": "borderRed"
         },
         {
             "id": 104,
             "name": "Татьяна Андреева",
-            "photo": "./img/executor-photo/TatyanaAndreeva.jpg",
+            "photo": "TatyanaAndreeva.jpg",
             "workAmount": 1,
             "color": "cards-border__blue"
         } 

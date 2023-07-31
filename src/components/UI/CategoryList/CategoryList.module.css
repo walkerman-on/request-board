@@ -1,3 +1,18 @@
+.cardsList {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+
+	height: 600px;
+	/* -- scroll -- */
+	overflow: auto;
+	scroll-snap-type: y mandatory;
+}
+
+.cardsList::-webkit-scrollbar {
+	width: 0;
+}
+
 .container {
 	background-color: var(--bg-light-gray-alfa50);
 	border-radius: 4px;
@@ -9,17 +24,6 @@
 	flex-direction: column;
 	gap: 8px;
 	margin-bottom: 10px;
-}
-.cardsList {
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
-	overflow: auto;
-	scroll-snap-type: y mandatory;
-}
-
-.cardsList::-webkit-scrollbar {
-	width: 0;
 }
 
 .info {
