@@ -1,9 +1,9 @@
 import React from "react"
 import cl from "./FilterButton.module.css"
 
-const FilterButton = ({ children }) => {
+const FilterButton = ({ children, ...props }) => {
 	return (
-		<button className={cl.btn} type="button">
+		<button {...props} className={cl.btn} type="button">
 			<span className={cl.btnText}>{children}</span>
 			<div className={cl.btnBg}>
 				<span className={cl.amount}>5</span>

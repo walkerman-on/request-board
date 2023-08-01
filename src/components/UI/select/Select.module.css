@@ -1,0 +1,10 @@
+.select {
+	border-radius: 4px;
+	border: 1px solid var(--color-blue-alfa-28);
+	/* background: red; */
+	/* max-width: 185px; */
+	padding: 5px 10px;
+}
+
+.options {
+}

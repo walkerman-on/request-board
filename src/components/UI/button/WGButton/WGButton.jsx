@@ -1,9 +1,9 @@
 import React from "react"
 import cl from "./WGButton.module.css"
 
-const WGButton = ({ children }) => {
+const WGButton = ({ children, ...props }) => {
 	return (
-		<button className={cl.btn} type="button">
+		<button {...props} className={cl.btn} type="button">
 			<span className={cl.btnText}>{children}</span>
 		</button>
 	)

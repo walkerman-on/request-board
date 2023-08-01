@@ -1,9 +1,9 @@
 import React from "react"
 import cl from "./SearchButton.module.css"
 
-const SearchButton = ({ children }) => {
+const SearchButton = ({ children, ...props }) => {
 	return (
-		<button type="submit" className={cl.btn}>
+		<button {...props} type="submit" className={cl.btn}>
 			{/* <img src="./img/search.svg" alt="Поиск" class="request-form__submit-img"> */}
 			{children}
 		</button>

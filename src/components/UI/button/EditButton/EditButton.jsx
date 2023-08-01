@@ -1,9 +1,9 @@
 import React from "react"
 import cl from "./EditButton.module.css"
 
-const EditButton = ({ children }) => {
+const EditButton = ({ children, ...props }) => {
 	return (
-		<button className={cl.btn} type="button">
+		<button {...props} className={cl.btn} type="button">
 			<span className={cl.btnText}>{children}</span>
 		</button>
 	)

@@ -1,16 +1,18 @@
 import React from "react"
-import cl from "./Input.module.css"
+import cl from "./CommentsInput.module.css"
 
-const Input = (props) => {
+const CommentsInput = (props) => {
 	return (
-		<input
+		<textarea
 			{...props}
 			type="text"
 			name="form-search"
 			className={cl.input}
 			placeholder={props.name}
+			cols="10"
+			rows="10"
 		/>
 	)
 }
 
-export default Input
+export default CommentsInput
