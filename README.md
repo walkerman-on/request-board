@@ -6,6 +6,8 @@ This is a service request board with various functionality.
 
 As the functionality is added, the demo will expand.
 <img width="1433" alt="Снимок экрана 2023-07-31 в 22 28 30" src="https://github.com/walkerman-on/request-board/assets/82907949/1de77ccf-b856-4ae2-a1d1-2cb5bbb04234">
+<img width="1440" alt="Снимок экрана 2023-08-02 в 19 13 56" src="https://github.com/walkerman-on/request-board/assets/82907949/165a9fd4-88e6-45fd-8784-beff36b1ae78">
+
 
 ## 💽 Installation
 Will be soon...
