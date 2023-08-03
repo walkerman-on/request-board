@@ -3,7 +3,8 @@ import cl from "./Cards.module.css"
 import DealButton from "../button/DealButton/DealButton"
 import { formattedDate } from "../../../utils/helper"
 import data from "../../../data.json"
-import Modal from "../Modal/Modal"
+import Modal from "../modal/Modal"
+import EditModal from "../modal/EditModal/EditModal"
 
 const Card = ({ title, date, dateChange, price, executorId }) => {
 	const executorList = data.executors.find((ex) => ex.id === executorId)
@@ -12,7 +13,9 @@ const Card = ({ title, date, dateChange, price, executorId }) => {
 
 	return (
 		<div>
-			<Modal active={modalActive} setActive={setModalActive} />
+			<Modal active={modalActive} setActive={setModalActive}>
+				<EditModal setActive={setModalActive} />
+			</Modal>
 			<li className={cl.container}>
 				<div className={`${cl.cards} ${cl.borderDefault}`}>
 					<div className={cl.firstBlock}>

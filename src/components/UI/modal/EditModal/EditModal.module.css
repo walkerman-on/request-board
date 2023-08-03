@@ -1,0 +1,82 @@
+.firstBlock {
+	padding: 18px 14px 0 14px;
+	display: flex;
+	flex-direction: column;
+	gap: 17px;
+	border-bottom: 1.5px solid var(--color-blue-alfa-7);
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+.status {
+	padding: 4px 12px;
+	border-radius: 50px;
+	border: 1.5px solid var(--color-light-blue);
+	font-size: 12px;
+	font-weight: 600;
+	color: var(--color-light-blue);
+	text-transform: uppercase;
+}
+
+.modalTitle {
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--color-black-alfa60);
+	text-transform: uppercase;
+}
+
+.secondBlock {
+	padding: 24px 14px 0 14px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.inputBlock {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.commentsBlock {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	height: 150px;
+	align-items: space-between;
+}
+
+.btnSection {
+	margin-top: 4px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 25px;
+	margin-bottom: 13px;
+}
+
+.btnDisacrd {
+	cursor: pointer;
+	color: var(--color-blue-alfa80);
+}
+
+.btnDisacrd:hover {
+	color: var(--color-tomato);
+}
+
+.secondaryText {
+	font-size: 16px;
+	font-weight: 300;
+	color: var(--color-black-alfa60);
+}
+
+.titleCard {
+	font-size: 20px;
+	font-weight: 700;
+}
