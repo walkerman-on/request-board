@@ -31,7 +31,7 @@ const EditModal = ({ setActive }) => {
 						]}
 						defaultValue={"Статус заявки"}
 					/>
-					<span className={cl.status}>{selectedValue}</span>
+					<span className={cl.status}>{selectedValue || "Статус заявки"}</span>
 				</div>
 			</div>
 			<div className={cl.secondBlock}>

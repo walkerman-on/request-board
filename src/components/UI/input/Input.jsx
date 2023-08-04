@@ -8,7 +8,7 @@ const Input = (props) => {
 			type="text"
 			name="form-search"
 			className={cl.input}
-			placeholder={props.name}
+			placeholder={props.placeholder}
 		/>
 	)
 }

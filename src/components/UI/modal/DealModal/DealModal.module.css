@@ -64,6 +64,7 @@
 .btnDisacrd {
 	cursor: pointer;
 	color: var(--color-blue-alfa80);
+	transition: color 0.2s;
 }
 
 .btnDisacrd:hover {

@@ -6,7 +6,7 @@ import data from "../../../data.json"
 import Modal from "../modal/Modal"
 import EditModal from "../modal/EditModal/EditModal"
 
-const Card = ({ title, date, dateChange, price, executorId }) => {
+const Card = ({ title, date, dateChange, price, executorId, executor }) => {
 	const executorList = data.executors.find((ex) => ex.id === executorId)
 
 	const [modalActive, setModalActive] = useState(false)
@@ -30,7 +30,7 @@ const Card = ({ title, date, dateChange, price, executorId }) => {
                         <img src="./img/message-icon.svg" alt="Иконка сообщения" class="contact-img"> */}
 						</div>
 					</div>
-					<div className={cl.secondBlock}>
+					{/* <div className={cl.secondBlock}>
 						<p className={cl.dateChange}>
 							<span className={cl.tertiaryText}>Дата изменения</span>
 							<span className={cl.secondaryText}>
@@ -45,7 +45,7 @@ const Card = ({ title, date, dateChange, price, executorId }) => {
 								<div className={cl.executorCont}>
 									<img
 										className={cl.executorImg}
-										src={require(`../../../img/executor-photo/${executorList.photo}`)}
+										// src={require(`../../../img/executor-photo/${executorList.photo}`)}
 										alt="Аватар исполнителя"
 									/>
 								</div>
@@ -67,7 +67,7 @@ const Card = ({ title, date, dateChange, price, executorId }) => {
 								+ Редактировать
 							</DealButton>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</li>
 		</div>

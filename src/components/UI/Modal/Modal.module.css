@@ -9,7 +9,7 @@
 	z-index: 1;
 }
 
-.active {
+.modal.active {
 	display: flex;
 	justify-content: center;
 	align-items: center;

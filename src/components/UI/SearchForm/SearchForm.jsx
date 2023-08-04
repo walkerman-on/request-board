@@ -7,7 +7,7 @@ const SearchForm = () => {
 	return (
 		<form className={cl.searchForm}>
 			{/* <img src="./img/cancel-search.svg" alt="Отмена поиска" class="request-form__search-img"> */}
-			<Input name="Поиск по сделкам" />
+			<Input placeholder="Поиск по сделкам" />
 			<SearchButton>Поиск</SearchButton>
 		</form>
 	)
