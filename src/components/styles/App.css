@@ -40,3 +40,13 @@ body {
 	font-size: 16px;
 	color: var(--color-black);
 }
+
+.container {
+	padding: 0 24px;
+}
+
+.menu {
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	flex-grow: 1;
+}

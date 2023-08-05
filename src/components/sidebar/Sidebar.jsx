@@ -1,33 +1,47 @@
-import React from "react"
+import React, { useState } from "react"
+import { Link } from "react-router-dom"
 import cl from "./Sidebar.module.css"
 import WGButton from "../UI/button/WGButton/WGButton"
 
 const Sidebar = () => {
+	const [active, setActive] = useState(0)
+
+	const [groups, setGroups] = useState(["Рабочая группа"])
+	const [newGroup, setNewGroup] = useState("Рабочая группа")
+
+	const addNewGroup = () => {
+		setGroups([...groups, newGroup])
+	}
+
 	return (
 		<div className={cl.menuCont}>
 			<aside className={cl.menu}>
 				<div className={cl.workGroup}>
 					<ul className={cl.groupList}>
-						<li className={cl.groupItem}>
-							<a href="#" className={cl.workGroupLink}>
-								Рабочая группа 1
-							</a>
-						</li>
-						<li className={cl.groupItem}>
-							<a
-								href="#"
-								className={`${cl.workGroupLink} ${cl.workGroupLinkActive}`}
-							>
-								Рабочая группа 2
-							</a>
-						</li>
-						<li className={cl.groupItem}>
-							<a href="#" className={cl.workGroupLink}>
-								Рабочая группа 3
-							</a>
-						</li>
+						{groups.map((groupItem, index) => {
+							return (
+								<li
+									className={`${
+										index === active
+											? cl.groupItem && cl.groupItemActive
+											: cl.groupItem
+									}`}
+									onClick={() => setActive(groupItem)}
+									key={index}
+								>
+									<Link to={`/workgroup${index + 1}`}>
+										{groupItem} {index + 1}
+									</Link>
+								</li>
+							)
+						})}
 					</ul>
-					<WGButton>Добавить группу +</WGButton>
+					<WGButton
+						disabled={groups.length > 2 ? true : false}
+						onClick={addNewGroup}
+					>
+						Добавить группу +
+					</WGButton>
 				</div>
 				<div className={cl.settings}>
 					{/* <img
@@ -35,7 +49,9 @@ const Sidebar = () => {
 						alt="Настройки"
 						class="settings-img"
 					/> */}
-					<a className={cl.settingsLink}>Настройки меню</a>
+					<Link to={""} className={cl.settingsLink}>
+						Настройки меню
+					</Link>
 				</div>
 			</aside>
 		</div>

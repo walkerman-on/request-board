@@ -27,6 +27,7 @@ const Menu = () => {
 					<SearchForm />
 					<FilterButton>Фильтры</FilterButton>
 				</div>
+
 				<RequestMenu category={data.category} />
 			</div>
 		</div>
