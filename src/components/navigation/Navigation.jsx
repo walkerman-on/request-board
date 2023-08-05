@@ -1,11 +1,14 @@
 import React from "react"
 import cl from "./Navigation.module.css"
+import { Link } from "react-router-dom"
+// import HomeRoundedIcon from "@mui/icons-material/HomeRounded"
 
 const Navigation = () => {
 	return (
 		<div className={cl.container}>
 			<nav className={cl.nav}>
 				<div className={cl.navBurger}>
+					<Link to={"/home"}>{/* <HomeRoundedIcon /> */}</Link>
 					{/* <img className={cl.navigation} class="menu-burger-img" src="./img/burger-menu.svg" alt="Меню-бургер"/> */}
 					<span className={cl.menuTitleText}>
 						Доска заявок на сервисное обслуживание

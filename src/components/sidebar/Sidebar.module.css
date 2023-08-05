@@ -37,6 +37,7 @@
 	background: var(--color-blue-alfa-7);
 	border-radius: 4px;
 	font-weight: 600;
+	padding: 9px 10px;
 }
 
 .groupItem:hover {

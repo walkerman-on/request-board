@@ -4,38 +4,39 @@ import cl from "./Sidebar.module.css"
 import WGButton from "../UI/button/WGButton/WGButton"
 
 const Sidebar = () => {
-	const [active, setActive] = useState(0)
+	const [active, setActive] = useState(1)
 
-	const [groups, setGroups] = useState(["Рабочая группа"])
+	const [groups, setGroups] = useState(["Рабочая группа", "Рабочая группа"])
 	const [newGroup, setNewGroup] = useState("Рабочая группа")
 
-	const addNewGroup = () => {
+	const addNewGroup = (index) => {
 		setGroups([...groups, newGroup])
 	}
 
+	// const changePage = (id) => {
+	// 	setActive(id)
+	// }
 	return (
 		<div className={cl.menuCont}>
 			<aside className={cl.menu}>
 				<div className={cl.workGroup}>
-					<ul className={cl.groupList}>
+					<div className={cl.groupList}>
 						{groups.map((groupItem, index) => {
 							return (
-								<li
+								<Link
 									className={`${
-										index === active
+										active === index + 1
 											? cl.groupItem && cl.groupItemActive
 											: cl.groupItem
 									}`}
-									onClick={() => setActive(groupItem)}
-									key={index}
+									onClick={() => setActive(index + 1)}
+									to={`/workgroup${index + 1}`}
 								>
-									<Link to={`/workgroup${index + 1}`}>
-										{groupItem} {index + 1}
-									</Link>
-								</li>
+									{groupItem} {index + 1}
+								</Link>
 							)
 						})}
-					</ul>
+					</div>
 					<WGButton
 						disabled={groups.length > 2 ? true : false}
 						onClick={addNewGroup}
