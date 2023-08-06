@@ -50,3 +50,8 @@ body {
 	grid-template-columns: 200px 1fr;
 	flex-grow: 1;
 }
+
+.icons {
+	width: 25px;
+	height: 25px;
+}

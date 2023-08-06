@@ -13,9 +13,6 @@ const Sidebar = () => {
 		setGroups([...groups, newGroup])
 	}
 
-	// const changePage = (id) => {
-	// 	setActive(id)
-	// }
 	return (
 		<div className={cl.menuCont}>
 			<aside className={cl.menu}>

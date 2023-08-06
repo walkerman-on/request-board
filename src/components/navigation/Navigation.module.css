@@ -13,7 +13,7 @@
 .navBurger {
 	display: flex;
 	align-items: center;
-	gap: 15px;
+	gap: 10px;
 }
 
 .menuTitleText {
@@ -63,4 +63,16 @@
 	display: block;
 	font-size: 12px;
 	color: var(--color-black-alfa60);
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	padding: 5px;
+}
+
+.icons:hover {
+	background: var(--color-blue-alfa-7);
+	border-radius: 50%;
 }

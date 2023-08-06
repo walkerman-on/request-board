@@ -38,6 +38,7 @@
 	border-radius: 4px;
 	font-weight: 600;
 	padding: 9px 10px;
+	color: var(--color-black-alfa60);
 }
 
 .groupItem:hover {
