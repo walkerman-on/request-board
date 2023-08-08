@@ -19,3 +19,9 @@
 	color: var(--color-white);
 	font-weight: 300;
 }
+
+.btn:disabled {
+	background-color: var(--bg-light-gray);
+	pointer-events: none;
+	cursor: pointer;
+}

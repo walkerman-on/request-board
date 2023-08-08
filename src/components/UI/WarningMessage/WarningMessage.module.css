@@ -1,0 +1,8 @@
+.container {
+	background: #ffcc99;
+	border-radius: 4px;
+	font-weight: 400;
+	padding: 9px 10px;
+	color: var(--color-black-alfa60);
+	text-align: center;
+}

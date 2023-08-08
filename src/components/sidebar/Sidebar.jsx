@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import cl from "./Sidebar.module.css"
 import WGButton from "../UI/button/WGButton/WGButton"
+import WarningMessage from "../UI/WarningMessage/WarningMessage"
 
 const Sidebar = () => {
 	const [active, setActive] = useState(1)
@@ -34,6 +35,11 @@ const Sidebar = () => {
 							)
 						})}
 					</div>
+					{groups.length > 2 ? (
+						<WarningMessage>Допустимое число рабочих групп - 3</WarningMessage>
+					) : (
+						""
+					)}
 					<WGButton
 						disabled={groups.length > 2 ? true : false}
 						onClick={addNewGroup}

@@ -106,7 +106,18 @@ const DealModal = ({ setActive }) => {
 					<span onClick={() => setActive(false)} className={cl.btnDisacrd}>
 						Отменить
 					</span>
-					<ReqButton onClick={addNewRequest}>Создать</ReqButton>
+					<ReqButton
+						disabled={
+							!newRequest.title ||
+							!newRequest.price ||
+							!newRequest.date ||
+							!newRequest.category ||
+							!newRequest.executor
+						}
+						onClick={addNewRequest}
+					>
+						Создать
+					</ReqButton>
 				</div>
 			</div>
 			{requests.map((req) => (
