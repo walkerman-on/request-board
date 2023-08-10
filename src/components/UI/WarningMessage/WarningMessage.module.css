@@ -1,8 +1,25 @@
 .container {
-	background: #ffcc99;
+	background-color: var(--color-yellow-light);
+	color: var(--color-blue-alfa80);
 	border-radius: 4px;
-	font-weight: 400;
-	padding: 9px 10px;
-	color: var(--color-black-alfa60);
+	padding: 10px 18px;
+	font-weight: 300;
 	text-align: center;
+	display: block;
+	opacity: 1;
+	animation: fadeInFromNone 1s ease;
+}
+
+.active {
+	display: none;
+	opacity: 0;
+}
+
+@keyframes fadeInFromNone {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

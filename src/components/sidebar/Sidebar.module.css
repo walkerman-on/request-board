@@ -25,7 +25,6 @@
 
 .groupItem {
 	padding: 9px 10px;
-	background-color: none;
 	transition: background-color 0.2s;
 	color: var(--color-black-alfa60);
 	cursor: pointer;

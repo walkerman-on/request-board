@@ -15,7 +15,11 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "react-scripts": "^5.0.1"
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "babel-loader": "^9.1.3",
+    "react-scripts": "^5.0.1",
+    "webpack": "^5.88.2"
   },
   "overrides": {
     "nth-check": "^2.1.1"

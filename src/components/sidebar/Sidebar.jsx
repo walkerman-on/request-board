@@ -10,6 +10,8 @@ const Sidebar = () => {
 	const [groups, setGroups] = useState(["Рабочая группа", "Рабочая группа"])
 	const [newGroup, setNewGroup] = useState("Рабочая группа")
 
+	const [messageState, setMessageState] = useState(false)
+
 	const addNewGroup = (index) => {
 		setGroups([...groups, newGroup])
 	}
@@ -36,7 +38,10 @@ const Sidebar = () => {
 						})}
 					</div>
 					{groups.length > 2 ? (
-						<WarningMessage>Допустимое число рабочих групп - 3</WarningMessage>
+						<WarningMessage active={messageState} setActive={setMessageState}>
+							Допустимое число рабочих групп -{" "}
+							<span style={{ fontWeight: "500" }}>3</span>
+						</WarningMessage>
 					) : (
 						""
 					)}
