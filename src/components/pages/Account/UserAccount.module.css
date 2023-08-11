@@ -1,0 +1,104 @@
+.navMenu {
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+}
+
+.container {
+	padding: 30px;
+	background-color: var(--bg-light-gray-alfa50);
+	border-radius: 12px;
+	width: 800px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.menu {
+}
+
+.userContainer {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.userAvatar {
+	background: var(--color-black-alfa30);
+	color: var(--color-white);
+	font-size: 40px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.imgCont {
+	height: 100px;
+	width: 100px;
+}
+
+.lkImg {
+	height: 100%;
+	width: auto;
+	overflow: hidden;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.userInfo {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.userNameText {
+	color: var(--color-black);
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.userIDText {
+	color: var(--color-black-alfa60);
+	font-size: 15px;
+	font-weight: 300;
+}
+
+.inputBlock {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	width: 100%;
+}
+
+.secondaryText {
+	font-size: 15px;
+	font-weight: 300;
+	color: var(--color-black-alfa60);
+}
+
+.infoBlock {
+	display: flex;
+	gap: 40px;
+}
+
+.btnSection {
+	margin-top: 4px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 25px;
+}
+
+.btnDisacrd {
+	cursor: pointer;
+	color: var(--color-blue-alfa80);
+	transition: color 0.2s;
+}
+
+.btnDisacrd:hover {
+	color: var(--color-tomato);
+}

@@ -7,15 +7,13 @@ import Sidebar from "./components/sidebar/Sidebar"
 
 function App() {
 	return (
-		<div className="App">
-			<BrowserRouter>
-				<Navigation />
-				<div className={"menu container"}>
-					<Sidebar />
-					<AppRouter />
-				</div>
-			</BrowserRouter>
-		</div>
+		<BrowserRouter>
+			{/* <Navigation /> */}
+			{/* <div className={"menu container"}> */}
+			{/* <Sidebar /> */}
+			<AppRouter />
+			{/* </div> */}
+		</BrowserRouter>
 	)
 }
 

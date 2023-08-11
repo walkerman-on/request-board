@@ -30,7 +30,7 @@ const Sidebar = () => {
 											: cl.groupItem
 									}`}
 									onClick={() => setActive(index + 1)}
-									to={`/workgroup${index + 1}`}
+									to={`/group/${index + 1}`}
 								>
 									{groupItem} {index + 1}
 								</Link>
