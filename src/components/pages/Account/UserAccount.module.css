@@ -1,6 +1,8 @@
 .navMenu {
-	padding-top: 20px;
+	padding: 52px 20px;
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 	justify-content: center;
 	gap: 40px;
 }
@@ -15,7 +17,19 @@
 	gap: 20px;
 }
 
-.menu {
+.cont {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.status {
+	padding: 4px 12px;
+	border-radius: 50px;
+	border: 1.5px solid var(--color-light-blue);
+	font-size: 15px;
+	font-weight: 600;
+	color: var(--color-light-blue);
+	text-transform: uppercase;
 }
 
 .userContainer {
@@ -101,4 +115,37 @@
 
 .btnDisacrd:hover {
 	color: var(--color-tomato);
+}
+
+.groupList {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.groupItem {
+	padding: 9px 10px;
+	transition: background-color 0.2s;
+	color: var(--color-black-alfa60);
+	cursor: pointer;
+	display: flex;
+	gap: 5px;
+}
+
+.groupItemActive {
+	background: var(--color-blue-alfa-7);
+	border-radius: 4px;
+	font-weight: 600;
+	padding: 9px 10px;
+	color: var(--color-black-alfa60);
+}
+
+.groupItem:hover {
+	background: var(--color-blue-alfa-7);
+	border-radius: 4px;
+}
+
+.workGroupLink {
+	color: var(--color-black-alfa60);
+	cursor: pointer;
 }
