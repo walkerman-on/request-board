@@ -15,6 +15,8 @@ Will be soon...
 ## 🚀 Usage
 ```bash
 # npm start
+# or
+# yarn start
 ```
 
 ## 💻 Languages and Tools:
