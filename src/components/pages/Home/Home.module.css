@@ -7,3 +7,57 @@
 	grid-template-columns: 200px 1fr;
 	flex-grow: 1;
 }
+
+.main {
+	padding: 50px 40px;
+}
+
+.text {
+	font-size: 30px;
+	font-weight: 600;
+	color: var(--color-black);
+}
+
+.cont {
+	padding: 40px 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.remindersList {
+	padding: 30px;
+	background-color: var(--bg-light-gray-alfa50);
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.infoBlock {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.titleText {
+	font-size: 25px;
+	font-weight: 600;
+	/* color: var(--color-gray); */
+	color: var(--color-blue-alfa80);
+}
+
+.remindersItem {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.secondaryText {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.thirdText {
+	font-size: 16px;
+}

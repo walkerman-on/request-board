@@ -6,7 +6,6 @@ import FilterButton from "../UI/button/FilterButton/FilterButton"
 import RequestMenu from "../UI/RequestMenu/RequestMenu"
 import Modal from "../UI/modal/Modal"
 import DealModal from "../UI/modal/DealModal/DealModal"
-import data from "../../data.json"
 
 const Menu = () => {
 	const [modalActive, setModalActive] = useState(false)
@@ -28,7 +27,7 @@ const Menu = () => {
 					<FilterButton>Фильтры</FilterButton>
 				</div>
 
-				<RequestMenu category={data.category} />
+				<RequestMenu />
 			</div>
 		</div>
 	)

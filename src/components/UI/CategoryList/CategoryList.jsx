@@ -1,13 +1,14 @@
-import React, { useState } from "react"
+import React, { useState, useContext } from "react"
 import cl from "./CategoryList.module.css"
 import EditButton from "../button/EditButton/EditButton"
 import Cards from "../Cards/Cards"
-import data from "../../../data.json"
 import Modal from "../modal/Modal"
 import QuickDealModal from "../modal/QuickDealModal/QuickDealModal"
+import { DataContext } from "../../../App"
 
 const CategoryList = ({ name, workAmount, totalPrice, id }) => {
 	const [modalActive, setModalActive] = useState(false)
+	const data = useContext(DataContext)
 
 	const cardsList = data.applications.filter(
 		(cards) => cards.category_id === id

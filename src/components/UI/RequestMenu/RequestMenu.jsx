@@ -2,12 +2,12 @@ import React from "react"
 import cl from "./RequestMenu.module.css"
 import CategoryList from "../CategoryList/CategoryList"
 import { useContext } from "react"
-import DataContext from "../../../App.js"
+import { DataContext } from "../../../App.js"
 
-const RequestMenu = ({ category }) => {
+const RequestMenu = () => {
 	const data = useContext(DataContext)
-	// const category = data.
-	console.log("Дата -", data)
+	const category = data.category
+
 	return (
 		<div className={cl.columns}>
 			<ul className={cl.columnsList}>
