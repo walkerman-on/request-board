@@ -1,19 +1,19 @@
 import React from "react"
-import { BrowserRouter } from "react-router-dom"
-import "./components/styles/App.css"
-import Navigation from "./components/navigation/Navigation.jsx"
 import AppRouter from "./components/AppRouter"
-import Sidebar from "./components/sidebar/Sidebar"
+import { BrowserRouter } from "react-router-dom"
+import { createContext } from "react"
+import "./components/styles/App.css"
 
 function App() {
+	const DataContext = createContext()
+	const name = "Alex"
+
 	return (
-		<BrowserRouter>
-			{/* <Navigation /> */}
-			{/* <div className={"menu container"}> */}
-			{/* <Sidebar /> */}
-			<AppRouter />
-			{/* </div> */}
-		</BrowserRouter>
+		<DataContext.Provider value={name}>
+			<BrowserRouter>
+				<AppRouter />
+			</BrowserRouter>
+		</DataContext.Provider>
 	)
 }
 
