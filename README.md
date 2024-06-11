@@ -1,24 +1,30 @@
-# 🗂️ Request Board 
-
-This is a service request board with various functionality.
-
-## 👾 Demo
-
-As the functionality is added, the demo will expand.
+## Демо
 <img width="1433" alt="Снимок экрана 2023-07-31 в 22 28 30" src="https://github.com/walkerman-on/request-board/assets/82907949/1de77ccf-b856-4ae2-a1d1-2cb5bbb04234">
-<img width="1440" alt="Снимок экрана 2023-08-02 в 19 13 56" src="https://github.com/walkerman-on/request-board/assets/82907949/165a9fd4-88e6-45fd-8784-beff36b1ae78">
+<img width="1440" alt="257876170-165a9fd4-88e6-45fd-8784-beff36b1ae78" src="https://github.com/walkerman-on/request-board-layout/assets/82907949/39ec7c3a-d51d-41cc-b736-4083bbba8148">
 
+---
 
-## 💽 Installation
-Will be soon...
+## Описание проекта
+Данный проект представляет из себя доску заявок на сервисное обслуживание для компании «Автоматика-Сервис» без функционала.
+Была разработана собственная UI-библиотека
 
-## 🚀 Usage
-```bash
-# npm start
-# or
-# yarn start
+---
+
+## Запуск проекта
+```
+npm install - устанавливаем зависимости
+npm start - запуск UI
 ```
 
-## 💻 Languages and Tools:
-<p align="left"><a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>   <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://babeljs.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="40" height="40"/> </a><a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> </p>
- 
+---
+
+### Работа с данными
+
+Данные берутся из файла `data.json`
+
+---
+
+## Технологии
+React, React Router, JavaScript, CSS module
+
+---
